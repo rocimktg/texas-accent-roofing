@@ -31,16 +31,16 @@ function initNavShrink() {
   const nav = document.getElementById('nav');
   if (!nav) return;
 
-  const desktopQuery = window.matchMedia('(min-width: 901px)');
+  const overlay = document.getElementById('menu-overlay');
 
   const syncNavState = () => {
-    const shouldCompact = desktopQuery.matches && window.scrollY > 24;
+    const shouldCompact = window.scrollY > 24;
     nav.classList.toggle('nav-compact', shouldCompact);
+    if (overlay) overlay.style.top = nav.offsetHeight + 'px';
   };
 
   syncNavState();
   window.addEventListener('scroll', syncNavState, { passive: true });
-  desktopQuery.addEventListener('change', syncNavState);
 }
 
 /* ── SCROLL LOCK ─────────────────────────────────────────── */

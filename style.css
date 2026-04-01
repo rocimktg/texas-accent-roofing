@@ -58,7 +58,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: var(--black); /* rubber-band overscroll color */
+  background-color: var(--white); /* rubber-band overscroll color */
 }
 
 body {
@@ -452,7 +452,7 @@ address {
 /* ── MOBILE MENU OVERLAY ──────────────────────────────────── */
 #menu-overlay {
   position: fixed;
-  top: 88px;
+  top: 88px; /* overridden by JS to match nav height */
   left: 0;
   right: 0;
   bottom: 0;
@@ -1407,11 +1407,6 @@ address {
   }
 }
 
-.area-badge--more {
-  border-style: dashed;
-  color: var(--muted);
-  box-shadow: none;
-}
 
 /* ── FAQ ──────────────────────────────────────────────────── */
 #faq {
@@ -1744,9 +1739,6 @@ address {
 }
 
 /* ── MOBILE CALL BAR ──────────────────────────────────────── */
-html, body {
-  background-color: var(--navy-dark);
-}
 
 #mobile-call-bar {
   position: fixed;
