@@ -1794,6 +1794,10 @@ html, body {
   height: 18px;
 }
 
+@media (max-width: 900px) {
+  #mobile-call-bar { display: block; }
+}
+
 @media (hover: hover) {
   #mobile-call-bar a:hover {
     background: var(--navy-dark);
