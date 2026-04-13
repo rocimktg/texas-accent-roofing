@@ -581,6 +581,14 @@ address {
   background-clip: text;
 }
 
+.hero-sub-label {
+  font-family: var(--font-headline);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  letter-spacing: 0.08em;
+  color: var(--blue);
+  margin: 0 0 0.5rem;
+}
+
 .hero-sub {
   font-size: 1.1rem;
   color: var(--muted);
